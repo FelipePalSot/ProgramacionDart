@@ -1,0 +1,13 @@
+main(){
+  double sueldo1 = 1000 ;
+  double sueldo2 = 2000 ;
+  double sueldo3 = 3000 ;
+  
+  double sueldoAum1 = sueldo1*1.10;
+  double sueldoAum2 = sueldo2*1.12;
+  double sueldoAum3 = sueldo2*1.15;
+  
+  print("El primer sueldo: " +sueldo1.toString()+" Su aumento es: "+sueldoAum1.toString());
+  print("El primer sueldo: " +sueldo2.toString()+" Su aumento es: "+sueldoAum2.toString());
+  print("El primer sueldo: " +sueldo3.toString()+" Su aumento es: "+sueldoAum3.toString());
+}
