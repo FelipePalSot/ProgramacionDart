@@ -1,0 +1,17 @@
+main(){
+  Perro fido = Perro(peso:20,nombrex:"Mimi",tipox:"monk");
+  print(fido.nombre);
+}
+//Clase Padre
+class Animal{
+  String? nombre;
+  String? tipo;
+  
+  Animal({this.nombre , this.tipo});
+}
+
+class Perro extends Animal{
+  double? peso;
+  //usamos super para acceder en las clases hijsa a los atributos de la clase padre
+  Perro({this.peso,nombrex,tipox}):super(nombre:nombrex,tipo:tipox);
+} 
