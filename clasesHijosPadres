@@ -1,0 +1,25 @@
+void main(){
+  trabajador pepe = trabajador();
+  chofer     juan = chofer();
+  
+  pepe.calcularSalario();
+  juan.manejando();
+}
+
+class trabajador{
+  String? nombre;
+  double? salario;
+  
+  void calcularSalario(){
+    print("Calculando salario...");
+  }
+}
+
+class chofer extends trabajador{
+  String? autoAsignado;
+  
+  void manejando(){
+    print("Manejando...");
+  }
+  
+}
