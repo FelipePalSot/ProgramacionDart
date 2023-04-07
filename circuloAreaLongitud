@@ -1,0 +1,10 @@
+import "dart:math";
+main(){
+  double radio = 10 ;
+  double area  = pi*pow(radio,2);
+  double longit = pi*radio*2;
+  
+  print("El radio es: $radio");
+  print("La longitud es: $longit");
+  print("El area es: $area");
+}
