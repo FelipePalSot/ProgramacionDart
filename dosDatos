@@ -1,0 +1,10 @@
+void main(){
+  int n1=6;
+  int n2=7;
+  int suma= n1 + n2 ; 
+  int resta = n2 - n1 ;
+  int multi = n1*n2 ;
+  print("La suma es: $suma");
+  print("La resta es: "+resta.toString());
+  print("La multiplicacion es: "+multi.toString());
+}
