@@ -1,0 +1,22 @@
+main(){
+  DateTime datetoday = DateTime.now(); //Instanciamos un objeto
+  print(datetoday);
+  
+  print(datetoday.day);
+  print(datetoday.month);
+  print(datetoday.year);
+  
+  String fecha="2023-04-08 14:46:50.121";//String que usaremos para convertirlo en un objeto
+  
+  DateTime fechaObjeto = DateTime.parse(fecha);
+  
+  print(fechaObjeto.hour);
+  
+  DateTime fecha1 = DateTime.parse("2026-04-12 15:54:23.212");
+  DateTime fecha2 = DateTime.parse("2021-12-11 21:32:15.210");
+  
+  Duration diferencia = fecha1.difference(fecha2);
+  
+  print(diferencia.inDays);
+  print(diferencia.inHours);
+}
