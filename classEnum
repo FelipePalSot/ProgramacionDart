@@ -1,0 +1,12 @@
+void main(){
+  print(Colores.values);
+  Colores.values.forEach((item){
+    print(item.name);
+  });
+}
+
+enum Colores{ //enum es una clase especial que nos da una coleccion
+  rojo,
+  azul,
+  amarillo
+}
