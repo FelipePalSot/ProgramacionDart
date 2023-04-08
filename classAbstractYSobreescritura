@@ -1,0 +1,31 @@
+main(){
+  Cuadrado cuadrado1 = Cuadrado();
+  cuadrado1.calcular();
+  cuadrado1.calcular2();
+}
+
+abstract class Forma{//class abstract que sirve para sacar clases hijas
+  double? area;
+  
+  void calcular(){
+    print("Calculando area");
+  }
+  
+  void calcular2(){
+    
+  }
+}
+
+class Cuadrado extends Forma{
+  double? lado;
+  
+  @override
+  void calcular(){
+    print("Area del cuadrado");
+  }
+  
+  @override // esto se coloca para notar que se sobreescribio
+  void calcular2(){
+    print("Calculando parte2");
+  }
+}
