@@ -1,0 +1,31 @@
+main(){
+  Administrador persona1 = Administrador();
+  persona1.nombrePersona();
+  persona1.areaPertenece();
+}
+
+abstract class Persona{
+  String? nombre;//este atributo puede aceptar nulo ademas que esta de más
+  
+  void nombrePersona(){
+    print("Se llama Pedro");
+  }
+}
+
+mixin Trabajador{
+  String? area;//este atributo puede aceptar nulo ademas que esta de más
+  
+  void areaPertenece(){
+  print("Pertence al area de administracion");
+  }
+  }
+  
+class Administrador extends Persona with Trabajador{
+  
+  @override
+  void nombrePersona(){
+    print("Se llama Mario");
+  }
+  
+}
+
